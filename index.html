@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html>
+    <title>MAPFRE</title>
+
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no, minimal-ui">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black">
+
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js"></script>
+
+    <head></head>
+    <body>
+        <div id="contenedor">
+            <div id="intro">
+                <img id="comenzar" src="img/comenzar.png" onclick="intro();" >
+            </div>
+            <div id="myModal" class="modalContainer">
+                <div id="myContent" class="modal-content">
+                <span onclick="cerrarModal();" class="close">×</span> <h2>Alerta</h2>
+                <p>O modal foi removido e a rolagem do corpo foi bloqueada!</p> </div>
+            </div> 
+            <!-- <div id="preguntas">
+                <img src="img/PREGUNTA_1/pregunta_1.png" alt="Pregunta 1" id="pregunta">
+                <div id="respuestas">
+                    <img src="img/PREGUNTA_1/respuesta1.png" onclick="responder('respuesta1');" alt="Respuesta 1" id="respuesta1">
+                    <img src="img/PREGUNTA_1/respuesta2.png" onclick="responder('respuesta2');" alt="Respuesta 2" id="respuesta2">
+                </div>
+            </div> -->
+            <div id="consejos">
+                <img id="titulo" src="img/CONSEJOS/titulo.png" alt="">
+                <div id="tablaConsejos">
+                    
+                    <img class="consejo" id="opcion0" src="img/CONSEJOS/pregunta0.png" onclick="marcar(0)"  alt="consejo1">
+                    <img class="consejo" id="opcion1" src="img/CONSEJOS/pregunta1.png" onclick="marcar(1)" alt="consejo2">
+                    <img class="consejo" id="opcion2" src="img/CONSEJOS/pregunta2.png" onclick="marcar(2)" alt="consejo3">
+                    <img class="consejo" id="opcion3" src="img/CONSEJOS/pregunta3.png" onclick="marcar(3)" alt="consejo4">
+                    <img class="consejo" id="opcion4" src="img/CONSEJOS/pregunta4.png" onclick="marcar(4)" alt="consejo5">
+                    <img class="consejo" id="opcion5" src="img/CONSEJOS/pregunta5.png" onclick="marcar(5)" alt="consejo6">
+                    <img class="consejo" id="opcion6" src="img/CONSEJOS/pregunta6.png" onclick="marcar(6)" alt="consejo7">
+                    <img class="consejo" id="opcion7" src="img/CONSEJOS/pregunta7.png" onclick="marcar(7)" alt="consejo8">
+                    <img class="consejo" id="opcion8" src="img/CONSEJOS/pregunta8.png" onclick="marcar(8)" alt="consejo9">
+                    <img class="consejo" id="opcion9" src="img/CONSEJOS/pregunta9.png" onclick="marcar(9)" alt="consejo10">
+                  
+                </div>
+                <img id="chica" src="img/CONSEJOS/chica.png" alt="chica">
+                
+            </div>
+            <img id="boton" src="img/CONSEJOS/boton.png" onclick="reiniciar();" alt="boton">
+        </div>
+    </body>
+</html>

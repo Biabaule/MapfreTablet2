@@ -1,0 +1,164 @@
+body{
+    margin:0px;
+}
+#contenedor {
+    height: 800px;
+    width: 1275px;
+    margin-left: auto;
+    margin-right: auto;
+    overflow: hidden;
+    background-image: url('img/fondo.jpg');
+    position: relative;
+}
+div#respuestas {
+    margin-top: -35px;
+}
+img#comenzar {
+    position: absolute;
+    bottom: 7%;
+    left: -30px;
+    opacity: 0.95;
+}
+img#comenzar:hover {
+    cursor:pointer;
+}
+img#pregunta {
+    margin-top: 35px;
+}
+#respuestas img:hover{
+    cursor: pointer;
+}
+#boton{
+    position:absolute;
+    bottom: 0;
+}
+#boton:hover{
+    cursor: pointer;
+}
+/* #preguntas{
+    display: block;
+    height: 800px;
+    background-image: url('img/fondo.png');
+    width: 1275px;
+    opacity: 1;
+    transition: 500ms;
+    text-align:center;
+} */
+
+.btnShake{
+    animation: shake 0.82s cubic-bezier(.36,.07,.19,.97) both;
+    transform: translate3d(0, 0, 0);
+    backface-visibility: hidden;
+    perspective: 1000px;
+}
+
+.consejo:hover{
+    cursor: pointer;
+}
+
+#consejos{
+    background-image: url('img/CONSEJOS/fondo.jpg');
+    height: 800px;
+    width: 1275px;
+    max-height: 1275px;
+    position: relative;
+    text-align: center;
+    display: block;
+    opacity: 1;
+    transition: 500ms;
+}
+
+#intro {
+    background-image: url(img/intro.jpg);
+    width: 100%;
+    height: 100%;
+    transition: 500ms;
+    position: absolute;
+    z-index: 1;
+}
+
+img#chica {
+    margin-top: -30px;
+    width: 56%;
+    margin-left: 35px;
+}
+
+#boton {
+    position: absolute;
+    bottom: -70px;
+    left: 0;
+    transition: 250ms;
+    width: 100%;
+    z-index: 2;
+    margin-left: 2px;
+}
+
+.modalContainer {
+    display: none; 
+    position: absolute;
+    z-index: 1;
+    padding-top: 0px;
+    left: 0;
+    top: 0;
+    opacity: 0;
+    transition: 500ms;
+    width: 1275px;
+    height: 800px;
+    overflow: auto;
+    background-image: url('img/CONSEJOS/fondoChica.png');
+}
+
+.modalContainer .modal-content {
+    background-color: #fefefe;
+    margin: auto;
+    padding: 20px;
+    border: 1px solid lightgray;
+    border-top: 10px solid #58abb7;
+    width: 650px;
+    top:-350px;
+    left: 60px;
+    position: absolute;
+    transition: 500ms;
+}
+
+.modalContainer .close {
+    color: #aaaaaa;
+    float: right;
+    font-size: 28px;
+    font-weight: bold;
+}
+
+.modalContainer .close:hover,
+.modalContainer .close:focus {
+    color: #000;
+    text-decoration: none;
+    cursor: pointer;
+}
+div#tablaConsejos img {
+    width: 50%;
+}
+div#tablaConsejos {
+    display: flex;
+    width: 1410px;
+    justify-content: center;
+    flex-wrap: wrap;
+    margin-left: -60px;
+}
+
+@keyframes shake {
+    10%, 90% {
+      transform: translate3d(-3px, 0, 0);
+    }
+    
+    20%, 80% {
+      transform: translate3d(6px, 0, 0);
+    }
+  
+    30%, 50%, 70% {
+      transform: translate3d(-10px, 0, 0);
+    }
+  
+    40%, 60% {
+      transform: translate3d(10px, 0, 0);
+    }
+}
